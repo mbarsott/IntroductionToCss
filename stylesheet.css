@@ -1,0 +1,50 @@
+/* everything (star selector) */
+* {
+    color:White;
+}
+/* tag selectors */
+body {
+    background-color: blanchedalmond;
+    background-image: url("bg.jpeg");
+}
+p {
+   background-color: #00ff00;
+   font-size: larger;
+}
+h1, h2 {
+    background-color:#cccc99;
+}
+div {
+    width: 50%;
+    background-color: #ff0000;
+}
+/* id selector */
+#content {
+    font-size: 28pt;
+    background-color: #0000ff;
+}
+/* class selector */
+.quotation {
+    font-size: 2.5em;
+    background-color: #000099;
+}
+/* descendant selector */
+div p {
+    background-color: #ddddaa;
+}
+/* child selector */
+div > p {
+   border-color: black;
+   border-width: thick;
+   border-style: solid;
+   background-color: #aadddd;
+   width: 50%;
+}
+/* attribute selector */
+img[alt=spacer] {
+    padding:0px;
+}
+/* pseudo class */
+a:visited {
+    color:#dddddd;
+}
