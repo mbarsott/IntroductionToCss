@@ -1,0 +1,29 @@
+/* specificity is: # of id selectors concatenated with # of class and attributes selector concatenated with # of type selectors */
+/* inline styles override stylesheet files */
+/* import one css definition for p */
+@import url("styles2.css");
+/* when selectors have the same specificity, the last one prevails */
+p {
+  background-color: green; /* overrides bg color the p selector from syles2.css because it is defined later */
+  font-size: 2em;
+}
+#content {
+  background-color: fuchsia; /* specificity (01 00 00) overrides bg color over all others */
+}
+div p {
+  background-color: red; /* overrides bg color the first one because it is more specific (00 00 02) versus (00 00 01) */
+}
+/* fonts are inherited, borders are not */
+div {
+  font-size: 8px;
+  border-style: dotted;
+  border-color: black;
+  border-width: 2px;
+}
+/* redefine em and strong that have been reset by reset.css */
+em {
+  font-style: italic;
+}
+strong {
+  font-weight: bolder;
+}
