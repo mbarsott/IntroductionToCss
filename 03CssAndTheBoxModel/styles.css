@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #cccccc;
+}
+.menu {
+    /* same as list-style: none; */
+    list-style-type: none;
+    text-align: center;
+}
+.menu li:hover {
+    background-color: #cc9999;
+}
+/* dislay: none removes the element from the page; visibility: hidden; does not diplay, but still uses the same space
+ul li:nth-child(3) {
+    display: none;
+} 
+ul li:nth-child(2) {
+    visibility: hidden;
+} 
+*/
+.menu li {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    background-color: #cccc99;
+    /* margin: 5px; */
+    padding: 3px 0 0 10px;
+    border-bottom: 3px solid #000000;
+    /* same as the line above:
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 3px;
+    */
+    /* border-left: 10px solid #cc3333; */
+}
+.menu li a {
+    text-decoration: none;
+    color: #000000;
+}
