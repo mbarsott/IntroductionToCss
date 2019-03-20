@@ -1,0 +1,39 @@
+body {
+  background: #cccc99;
+  font-family: "Arial", "Helvetica", sans-serif; /* browser will pick the first available in the list */
+}
+
+.content {
+  background: #eeeecc;
+  padding: 7px;
+  /* text-indent: 3em; */ /* indents first line of a paragraph */
+  text-align: justify;
+  line-height: 1.8em;
+}
+
+.code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.9em;
+}
+
+.copyright {
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2 em;
+  letter-spacing: 0.5em;
+  word-spacing: 2em;
+  text-decoration: underline line-through;
+  text-align: center;
+}
+
+ol {
+  /* font: italic 0.9em serif; */
+  /* the line above is the same as the following three: */
+  font-style: italic;
+  font-size: 0.9em;
+  font-family: serif;
+}
